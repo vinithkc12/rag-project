@@ -1,45 +1,83 @@
 # RAG Project (Retrieval Augmented Generation)
 
-This project implements a simple RAG (Retrieval Augmented Generation) pipeline using:
-- LangChain
-- FAISS
-- OpenAI / LLM
-- FastAPI
+A simple Retrieval Augmented Generation (RAG) system built using LangChain, FAISS, OpenAI LLM, and FastAPI.  
+This project allows users to upload documents and ask questions based on the content.
 
-The system loads PDF/text documents, creates embeddings, stores them in a vector database, and allows users to ask questions via an API.
+---
+
+## 🚀 Features
+
+- Load PDF and TXT documents  
+- Create embeddings and store in FAISS vector database  
+- Retrieve relevant context for user queries  
+- Generate answers using LLM  
+- REST API using FastAPI  
+
+---
+
+## 🛠 Tech Stack
+
+- Python  
+- LangChain  
+- FAISS  
+- OpenAI  
+- FastAPI  
 
 ---
 
 ## 📂 Project Structure
-## How to Run
+rag-project/ │ ├── api.py ├── requirements.txt ├── README.md │ ├── data/ │   ├── sample.txt │   └── Vinith GenAI.pdf │ ├── rag/ │   ├── init.py │   ├── loader.py │   ├── vectorstore.py │   └── llm.py │ └── venv/
 
-1. Clone repository
-git clone https://github.com/vinithkc12/rag-project.git
+---
 
-2. Go to project folder
-cd rag-project
+## ⚙️ Setup Instructions
 
-3. Create virtual environment
+### 1️⃣ Create Virtual Environment
+
 python -m venv venv
-
-4. Activate venv
+Activate:
 venv\Scripts\activate
+---
 
-5. Install dependencies
+### 2️⃣ Install Dependencies
 pip install -r requirements.txt
+---
 
-6. Run API
+### 3️⃣ Set OpenAI API Key (Windows)
+setx OPENAI_API_KEY "your_api_key_here"
+Restart terminal after this.
+
+---
+
+### 4️⃣ Run Application
 uvicorn api:app --reload
-
 Open browser:
 http://127.0.0.1:8000/docs
+---
 
-## Example Question
+## 📌 Example API Request
 
-POST /ask
+POST `/ask`
+{ "question": "What is this document about?" }
+---
 
-{
-  "question": "What is this document about?"
-}
+## ✅ Output
 
+Returns an answer generated using your uploaded documents.
+
+---
+
+## 📈 Future Improvements
+
+- Add authentication  
+- Add UI using Streamlit  
+- Add multi-document upload  
+- Add chat history  
+
+---
+
+## 👨‍💻 Author
+
+Vinith Kumar  
+GenAI / Python Developer
 
