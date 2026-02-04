@@ -50,9 +50,9 @@ Restart terminal after this.
 ---
 
 ### 4️⃣ Run Application
-uvicorn api:app --reload
 
-Open browser:
+uvicorn api:app --reload
+   Open browser:
 http://127.0.0.1:8000/docs
 ---
 
@@ -81,5 +81,6 @@ Returns an answer generated using your uploaded documents.
 
 Vinith Kumar  
 GenAI / Python Developer
+
 
 
