@@ -43,8 +43,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ---
 
-### 3️⃣ Set OpenAI API Key (Windows)
-setx OPENAI_API_KEY "your_api_key_here"
+### 3️⃣ Set OpenAI API Key (Windows)setx OPENAI_API_KEY "your_api_key_here"
 Restart terminal after this.
 
 ---
@@ -81,6 +80,7 @@ Returns an answer generated using your uploaded documents.
 
 Vinith Kumar  
 GenAI / Python Developer
+
 
 
 
