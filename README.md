@@ -34,3 +34,12 @@ uvicorn api:app --reload
 Open browser:
 http://127.0.0.1:8000/docs
 
+## Example Question
+
+POST /ask
+
+{
+  "question": "What is this document about?"
+}
+
+
